@@ -1,6 +1,6 @@
 <?php ?>
 
-<nav class="mrflinck-navbar">
+<nav class="teammachine-navbar">
     <div class="container navbar-container d-flex justify-content-md-center">
         <div class="d-md-none d-flex align-items-center ms-3">
             <a class="" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"

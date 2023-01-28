@@ -24,14 +24,14 @@ if (!empty($block['align'])) {
            <div class="col-lg-6">
 
                <p>--- Recent posts</p>
-               <h2>Latest Mr Flinck posts</h2>
+               <h2>Latest Team machine posts</h2>
                <p>You may be interested in our technologies. We want to share more helpful infomation with you about our digital life and methods.</p>
            </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-lg-6 d-flex">
                         <div class="ratio ratio-1x1">
-                            <img class="w-100 h-auto" src="http://mrflinck.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
+                            <img class="w-100 h-auto" src="http://teammachine.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
                         </div>
                         <div>
                             <span>Web | 19.09.2022</span>
@@ -42,7 +42,7 @@ if (!empty($block['align'])) {
                     </div>
                     <div class="col-lg-6 d-flex">
                         <div class="ratio ratio-1x1">
-                            <img class="w-100 h-auto" src="http://mrflinck.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
+                            <img class="w-100 h-auto" src="http://teammachine.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
                         </div>
                         <div>
                             <span>Web | 19.09.2022</span>
@@ -53,7 +53,7 @@ if (!empty($block['align'])) {
                     </div>
                     <div class="col-lg-6 d-flex">
                         <div class="ratio ratio-1x1">
-                            <img class="w-100 h-auto" src="http://mrflinck.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
+                            <img class="w-100 h-auto" src="http://teammachine.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
                         </div>
                         <div>
                             <span>Web | 19.09.2022</span>
@@ -64,7 +64,7 @@ if (!empty($block['align'])) {
                     </div>
                     <div class="col-lg-6 d-flex">
                         <div class="ratio ratio-1x1">
-                            <img class="w-100 h-auto" src="http://mrflinck.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
+                            <img class="w-100 h-auto" src="http://teammachine.local/wp-content/uploads/2022/12/leaves-g9c81b4562_1920.jpg" alt="">
                         </div>
                         <div>
                             <span>Web | 19.09.2022</span>

@@ -5,8 +5,8 @@
 				<?php get_sidebar(); ?>
             </div>
             <div class="col-lg-8 col-xl-9 main-content">
-                <h1 class="text-center entry-title" itemprop="name"><?php esc_html_e( 'Sivua ei löytynyt', 'mrflinck' ); ?></h1>
-	            <p class="text-center "><?php esc_html_e( 'Kokeile haku?', 'mrflinck' ); ?></p>
+                <h1 class="text-center entry-title" itemprop="name"><?php esc_html_e( 'Sivua ei löytynyt', 'teammachine' ); ?></h1>
+	            <p class="text-center "><?php esc_html_e( 'Kokeile haku?', 'teammachine' ); ?></p>
 
                 <h2 class="text-center my-5">Ehkä joku näistä tuotteista kiinnostaisi?</h2>
                 <div class="products products-row row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-4 row-cols-xxl-5 gx-2 columns-5">

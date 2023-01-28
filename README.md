@@ -1,4 +1,5 @@
-# Mr Flinck Oy Ab
+# Team Machine Oy
+There is no eye in Team Machine
 ## Official WP theme 
 Add all stuff needed here as you go
 ### Setup
@@ -27,8 +28,8 @@ We use Local
 We use git
 ### Other
 
-### Design
-[XD Design](https://xd.adobe.com/view/f434297e-6992-453d-b4c1-00084c04de6d-a167/)
+## Design
+There is no design
 
 ### Resources
 [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet)  

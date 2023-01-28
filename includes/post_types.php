@@ -7,12 +7,12 @@ function cptui_register_my_cpts_references() {
      */
 
     $labels = [
-        "name" => esc_html__( "References", "mrflinck" ),
-        "singular_name" => esc_html__( "Reference", "mrflinck" ),
+        "name" => esc_html__( "References", "teammachine" ),
+        "singular_name" => esc_html__( "Reference", "teammachine" ),
     ];
 
     $args = [
-        "label" => esc_html__( "References", "mrflinck" ),
+        "label" => esc_html__( "References", "teammachine" ),
         "labels" => $labels,
         "description" => "",
         "public" => true,

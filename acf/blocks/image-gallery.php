@@ -25,7 +25,7 @@ if (!empty($block['align'])) {
         $images = get_field('images');
         $size = 'large'; // (thumbnail, medium, large, full or custom size)
         if ($images): ?>
-            <div class="row" id="mrflinck-gallery">
+            <div class="row" id="teammachine-gallery">
                 <?php foreach ($images as $image_id):
                     $imageSrc = wp_get_attachment_image_src($image_id,$size);
                     ?>
@@ -50,7 +50,7 @@ if (!empty($block['align'])) {
         import PhotoSwipeLightbox from '<?php echo get_stylesheet_directory_uri(); ?>/photoswipe/photoswipe-lightbox.esm.min.js';
         const lightbox = new PhotoSwipeLightbox({
             // may select multiple "galleries"
-            gallery: '#mrflinck-gallery',
+            gallery: '#teammachine-gallery',
 
             // Elements within gallery (slides)
             children: 'a',

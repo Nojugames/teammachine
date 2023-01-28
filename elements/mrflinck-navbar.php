@@ -1,6 +1,6 @@
 <?php ?>
 
-<nav class="mrflinck-navbar">
+<nav class="teammachine-navbar">
     <div class="container navbar-container d-flex justify-content-between align-items-center">
         <div class="d-md-none d-flex align-items-center ms-3">
             <a class="" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"
@@ -36,7 +36,7 @@
             ));
             ?>
         </div>
-        <a href="" class="btn btn-mrflinck">
+        <a href="" class="btn btn-teammachine">
             Gör en beställning
         </a>
     </div>
