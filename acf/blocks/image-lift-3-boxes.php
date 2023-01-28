@@ -17,7 +17,7 @@ if (!empty($block['align'])) {
 
 ?>
 
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> container-fluid my-5 pt-5 pb-3">
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> container-fluid my-4 py-3">
     <div class="container">
         <div class="row">
 
@@ -27,7 +27,7 @@ if (!empty($block['align'])) {
                 <div class="col-lg-4">
 
                     <div class="image-lift-box">
-                        <div class="ratio ratio-16x9">
+                        <div class="ratio ratio-4x3">
                             <?php if ($imageLifts['image_lift_1']['image']): ?>
                                 <?php echo wp_get_attachment_image($imageLifts['image_lift_1']['image'], 'large','', array('class' => '')); ?>
                             <?php endif; ?>
@@ -39,7 +39,7 @@ if (!empty($block['align'])) {
                 </div>
                 <div class="col-lg-4">
                     <div class="image-lift-box">
-                        <div class="ratio ratio-16x9">
+                        <div class="ratio ratio-4x3">
                         <?php if ($imageLifts['image_lift_2']['image']): ?>
                             <?php echo wp_get_attachment_image($imageLifts['image_lift_2']['image'], 'large','', array('class' => '')); ?>
                         <?php endif; ?>
@@ -51,7 +51,7 @@ if (!empty($block['align'])) {
                 </div>
                 <div class="col-lg-4">
                     <div class="image-lift-box">
-                        <div class="ratio ratio-16x9">
+                        <div class="ratio ratio-4x3">
                         <?php if ($imageLifts['image_lift_3']['image']): ?>
                             <?php echo wp_get_attachment_image($imageLifts['image_lift_3']['image'], 'large','', array('class' => '')); ?>
                         <?php endif; ?>

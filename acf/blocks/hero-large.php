@@ -39,11 +39,9 @@ $size = 'large'; // (thumbnail, medium, large, full or custom size)
 ?>
 
 <div id="<?php echo esc_attr($id); ?>" style="background-image: url('<?php echo esc_url(get_field('background_image')); ?>')" class="<?php echo esc_attr($className); ?> container-fluid">
-    <div class="cover-hero">
-    </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 content-container">
+                <div class="col-lg-7 content-container">
                     <?php if ($image): ?>
                         <?php echo wp_get_attachment_image($image, $size); ?>
                     <?php endif; ?>
@@ -67,8 +65,8 @@ $size = 'large'; // (thumbnail, medium, large, full or custom size)
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center" style="z-index:11">
-                    <img class="mw-100" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/lofoten.png" alt="">
+                <div class="col-lg-4 offset-lg-1 d-flex justify-content-center align-items-center" style="z-index:11">
+                    <img class="mw-100" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/skjortalogo.png" alt="">
                 </div>
             </div>
         </div>
