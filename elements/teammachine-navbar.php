@@ -1,67 +1,41 @@
 <?php ?>
 
 <nav class="teammachine-navbar">
-    <div class="container navbar-container">
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="main-menu-navigation d-none d-md-block" id="main-menu">
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'main-menu',
-                        'container' => false,
-                        'menu_class' => '',
-                        'fallback_cb' => '__return_false',
-                        'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'show_button'     => false
-                        //'depth' => 2,
-                        //'walker' => new bootstrap_5_wp_nav_menu_walker()
-                    ));
-                    ?>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex align-items-center justify-content-center">
-                <div class="d-md-none d-flex align-items-center ms-3">
-                    <a class="" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"
-                       aria-controls="offcanvas"><span class="visually-hidden">Toggle menu</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
-                        </svg>
-                    </a>
-                </div>
-                <?php
-                $custom_logo_id = get_theme_mod( 'custom_logo' );
-                $logo           = wp_get_attachment_image_src( $custom_logo_id, 'full' );
-
-                if ( has_custom_logo() ) {
-                    echo '<a  class="navbar-brand" href="' . esc_url( home_url( '/' ) ) . '"><img class="" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '"></a>';
-                } else {
-                    echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
-                }
-                ?>
-            </div>
-            <div class="col-md-4">
-                <div class="main-menu-navigation d-none d-md-block" id="main-menu">
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'main-menu',
-                        'container' => false,
-                        'menu_class' => '',
-                        'fallback_cb' => '__return_false',
-                        'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                        'show_button'     => false
-                        //'depth' => 2,
-                        //'walker' => new bootstrap_5_wp_nav_menu_walker()
-                    ));
-                    ?>
-                </div>
-            </div>
+    <div class="container navbar-container d-flex justify-content-between">
+        <div class="d-md-none d-flex align-items-center ms-3">
+            <a class="" data-bs-toggle="offcanvas" href="#mobileMenu" role="button"
+               aria-controls="offcanvas"><span class="visually-hidden">Toggle menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+                </svg>
+            </a>
         </div>
+        <?php
+        $custom_logo_id = get_theme_mod( 'custom_logo' );
+        $logo           = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 
+        if ( has_custom_logo() ) {
+            echo '<a  class="navbar-brand" href="' . esc_url( home_url( '/' ) ) . '"><img class="" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '"></a>';
+        } else {
+            echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
+        }
+        ?>
 
-
-
+        <div class="main-menu-navigation d-none d-md-block" id="main-menu">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'main-menu',
+                'container' => false,
+                'menu_class' => '',
+                'fallback_cb' => '__return_false',
+                'items_wrap' => '<ul id="%1$s" class="navbar-nav ms-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                'show_button'     => false
+                //'depth' => 2,
+                //'walker' => new bootstrap_5_wp_nav_menu_walker()
+            ));
+            ?>
+        </div>
     </div>
 </nav>
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasLabel">

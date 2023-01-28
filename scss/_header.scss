@@ -1,14 +1,15 @@
 #header {
   //background: #002b45;
-  padding-top:32px;
+  //margin-top:32px;
   //box-shadow: 5px 5px 10px rgba(0,0,0,.05);
   //border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   //border-bottom: #ff8f00 solid 2px;
-  position:fixed;
+  position:relative;
   top:0;
   width:100%;
   transition: top 0.3s;
   z-index:9;
+  background: #161616;
 
 }
 .toggle-filter-menu {

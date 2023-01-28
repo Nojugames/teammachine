@@ -2,31 +2,32 @@
 <?php
 // the query
 $args = array(
-  'post_type' => 'post',
-  'orderby'        => 'rand',
-  'posts_per_page' => 3,
+    'post_type' => 'product',
+    'orderby'        => 'rand',
+    'posts_per_page' => 3,
 );
 $the_query = new WP_Query( $args ); ?>
 
 
     <div class="block-hero-subpage container-fluid p-0">
-        <div style="background-position:center; background-size:cover;background-image: url('<?php echo esc_url(get_the_post_thumbnail_url($post->ID)) ?>')">
             <div class="d-flex justify-content-center align-items-center flex-column py-5 hero-info-container"
-                 style="min-height: 400px; ">
+                 style="min-height: 200px; ">
                 <?php
                 if ( function_exists('yoast_breadcrumb') ) {
                     yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
                 }
                 ?>
-                    <h1 class="text-white" style="font-size:60px;"><?php the_title(); ?></h1>
+                <h1 class="text-white" style="font-size:60px;"><?php the_title(); ?></h1>
 
             </div>
-        </div>
     </div>
 
     <main id="content" role="main" class="container-xl">
         <div class="row my-5">
-            <div class="col-12">
+            <div class="col-lg-5">
+                <?php the_post_thumbnail('large',array('class' => 'mw-100 h-auto')); ?>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
                 <?php the_content(); ?>
             </div>
 
@@ -35,7 +36,7 @@ $the_query = new WP_Query( $args ); ?>
     <div id="" class="container-fluid bg-black">
         <div class="container">
             <div class="text-center">
-                <h2><?php echo pll__('Muut julkaissut'); ?></h2>
+                <h2><?php echo pll__('Muut tuotteet'); ?></h2>
             </div>
             <?php if ( $the_query->have_posts() ) : ?>
                 <div class="row my-5">
