@@ -1,0 +1,18 @@
+.block-cta {
+  margin-top:5rem;
+  background-color: #f6ede4;
+  h2,h3,p {
+    color:black;
+  }
+  .btn.text-black {
+    border:2px solid black;
+    &:hover {
+      background-color:rgba(255, 187, 57, 0.1);
+    }
+  }
+  .btn.bg-green {
+    &:hover {
+      background-color: rgb(40, 75, 56) !important;
+    }
+  }
+}

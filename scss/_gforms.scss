@@ -1,0 +1,19 @@
+.gform_heading {
+  margin-bottom:2rem;
+}
+.gfield {
+  //margin-bottom:2rem;
+}
+
+.gform_wrapper.gravity-theme fieldset {
+  margin-bottom:2rem !important;
+}
+
+.gform_wrapper.gravity-theme #field_submit input, .gform_wrapper.gravity-theme .gform_footer input {
+  padding: 0.5rem 1.5rem;
+  background: $blue;
+  color:white;
+  border:none;
+  border-radius: 4px;
+  font-weight:bold;
+}
