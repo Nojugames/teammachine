@@ -29,7 +29,6 @@ $the_query = new WP_Query( $args );
         <div class="text-center">
             <h2><?php the_field('title'); ?></h2>
             <p><?php the_field('text'); ?></p>
-
         </div>
 
         <?php if ( $the_query->have_posts() ) : ?>

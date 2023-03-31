@@ -22,13 +22,12 @@ if (!empty($block['align'])) {
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3 text-center mb-5">
-                <h2>Ta kontakt</h2>
-                <p>Fyll i formuläret, ring eller skicka e-post. Man når oss också på Whatsapp, Facebook, Instagram etc. etc.</p>
+                <h2><?php the_field('title'); ?></h2>
+                <p><?php the_field('text'); ?></p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-5 order-3 order-lg-1 map-container">
-
                 <?php echo do_shortcode('[gravityform id="1" title="true"]'); ?>
             </div>
             <div class="col-lg-6 offset-lg-1 order-2">

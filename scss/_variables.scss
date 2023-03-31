@@ -1,9 +1,12 @@
 
-$blue:      #002b45;
+$blue:      #4B92DB;
 $yellow:    #ffc67d;
 $orange:    #ff7200;
+$red:       #C8102E;
 $white:     #FFFFFF;
-$black:     #000000;
+$silver:    #8A8D8F;
+$grey:      #A2AAAD;
+$black:     #1B1C1E;
 
 $theme-colors: (
         "blue":   $blue,
@@ -11,4 +14,7 @@ $theme-colors: (
         "orange":  $orange,
         "white":  $white,
         "black":  $black,
+        "silver":  $silver,
+        "grey":  $grey,
+        "red":  $red,
 );
