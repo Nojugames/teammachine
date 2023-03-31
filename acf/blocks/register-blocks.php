@@ -49,6 +49,15 @@ function my_acf_init_block_types() {
             'icon'              => 'admin-comments',
             'keywords'          => array( 'map','karta','kartta' ),
         ));
+        acf_register_block_type(array(
+            'name'              => 'product-cards',
+            'title'             => __('Product cards'),
+            'description'       => __('Some product cards yeah.'),
+            'render_template'   => 'acf/blocks/product-cards.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'product','kortti','card', 'tuote' ),
+        ));
         //acf_register_block_type(array(
         //    'name'              => 'reference-posters',
         //    'title'             => __('Reference posters'),

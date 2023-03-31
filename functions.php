@@ -91,21 +91,21 @@ function teammachine_skip_link() {
 	echo '<a href="#content" class="skip-link screen-reader-text">' . esc_html__( 'Skip to the content', 'teammachine' ) . '</a>';
 }
 
-add_filter( 'the_content_more_link', 'teammachine_read_more_link' );
-function teammachine_read_more_link() {
-	if ( ! is_admin() ) {
-		return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">' . sprintf( __( '...%s', 'teammachine' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
-	}
-}
+//add_filter( 'the_content_more_link', 'teammachine_read_more_link' );
+//function teammachine_read_more_link() {
+//	if ( ! is_admin() ) {
+//		return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">' . sprintf( __( '...%s', 'teammachine' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
+//	}
+//}
 
-add_filter( 'excerpt_more', 'teammachine_excerpt_read_more_link' );
-function teammachine_excerpt_read_more_link( $more ) {
-	if ( ! is_admin() ) {
-		global $post;
-
-		return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">' . sprintf( __( '...%s', 'teammachine' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
-	}
-}
+//add_filter( 'excerpt_more', 'teammachine_excerpt_read_more_link' );
+//function teammachine_excerpt_read_more_link( $more ) {
+//	if ( ! is_admin() ) {
+//		global $post;
+//
+//		return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">' . sprintf( __( '...%s', 'teammachine' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
+//	}
+//}
 
 add_filter( 'big_image_size_threshold', '__return_false' );
 add_filter( 'intermediate_image_sizes_advanced', 'teammachine_image_insert_override' );
