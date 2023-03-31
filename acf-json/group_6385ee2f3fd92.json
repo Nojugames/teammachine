@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6385ee30120ef",
-            "label": "Logo",
+            "label": "Image",
             "name": "image",
             "type": "image",
             "instructions": "",
@@ -156,5 +156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1672164510
+    "modified": 1680260928
 }

@@ -42,9 +42,7 @@ $size = 'large'; // (thumbnail, medium, large, full or custom size)
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 content-container">
-                    <?php if ($image): ?>
-                        <?php echo wp_get_attachment_image($image, $size); ?>
-                    <?php endif; ?>
+
                     <?php if(get_field('top_text')): ?>
                         <p class="hero-top-text"><?php the_field('top_text'); ?></p>
                     <?php endif; ?>
@@ -66,7 +64,10 @@ $size = 'large'; // (thumbnail, medium, large, full or custom size)
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-1 d-flex justify-content-center align-items-center" style="z-index:11">
-                    <img class="mw-100" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/skjortalogo.png" alt="">
+                    <?php if ($image): ?>
+                        <?php echo wp_get_attachment_image($image, $size, '', array( 'class' => 'mw-100' )); ?>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
